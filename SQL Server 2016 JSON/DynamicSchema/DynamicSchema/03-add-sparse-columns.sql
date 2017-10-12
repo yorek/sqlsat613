@@ -4,6 +4,8 @@
 -- Copyright:		Attribution-NonCommercial-ShareAlike 2.5
 -- Tab/indent size:	4
 ------------------------------------------------------------------------
+USE DynamicSchema
+GO
 
 DECLARE C CURSOR FAST_FORWARD
 FOR

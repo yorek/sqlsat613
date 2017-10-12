@@ -4,6 +4,9 @@
 -- Copyright:		Attribution-NonCommercial-ShareAlike 2.5
 -- Tab/indent size:	4
 ------------------------------------------------------------------------
+USE DynamicSchema
+GO
+
 SET NOCOUNT ON;
 GO
 
