@@ -38,7 +38,7 @@ namespace DatabaseHammer
 
         static void Main(string[] args)
         {
-            int testRunTime = 10000; // 10 seconds
+            int testRunTime = Properties.Settings.Default.RunTime * 1000; // milliseconds
 
             Console.WriteLine("EAV Demo DatabaseHammer {0} (c) Davide Mauri 2011-2017", Assembly.GetExecutingAssembly().GetName().Version);
             Console.WriteLine("To be used only for demo purposes. Use at your own risk.");
@@ -171,7 +171,7 @@ namespace DatabaseHammer
                     createTask = false;
                 }
 
-                Console.WriteLine("Now waiting for 10 seconds...");
+                Console.WriteLine("Now waiting for {0} seconds...", Properties.Settings.Default.RunTime);
                 Thread.Sleep(testRunTime);
                 Console.WriteLine("Done...");
 
